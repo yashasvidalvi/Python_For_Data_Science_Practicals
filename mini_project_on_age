@@ -1,0 +1,11 @@
+
+jay = int(input("Enter Jay's age: "))
+viru = int(input("Enter Viru's age: "))
+gabbar = int(input("Enter Gabbar's age: "))
+
+if jay > viru and jay > gabbar:
+    print("Jay is older")
+elif viru > jay and viru > gabbar:
+    print("Viru is older")
+else:
+    print("Gabbar is older")
