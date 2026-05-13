@@ -1,10 +1,11 @@
 age = int(input("Enter your age: "))
-if(age < 18):
-    wait_years = 18 - age
-    print(f"Wait for {wait_years} years to apply for RTO licence")
-elif(age >= 18 and age < 75):
-    print("You are eligible for applying RTO licence.")
-    print("Welcome to Pune RTO office")
+if(age > 0):
+    if 18<= age < 75:
+        print("You are eligible for applying RTO licence.")
+    elif age < 18:
+        print(f"Wait for {18 - age} years to apply for RTO licence.")
+    else:
+        print("Age Barred for applying RTO licence.")
 else:
-    print("You are over age bar")
+    print("Age can not be negative....Please enter valid age.")
     
