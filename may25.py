@@ -42,9 +42,11 @@ print(total)
 # s = "Instagram"
 half = len(s)//2
 t = 0
-for i in range(len(s)//2):
+for i in range(half):
     t = t+salary[i]
+next_half = sum(salary)-t
 print(t)
+print(next_half)
 
 # sum of first half of the string
 s = "Instagram"
