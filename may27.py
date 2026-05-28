@@ -6,18 +6,22 @@
 #     else:
 #         print(f"Order ID {id} is odd.")
 
+# order_id = [101, 102, 103, 104, 105]
+# for id in order_id:
+#     print(f"Processing order ID: {id}")
+
 #Task 2 : 
 
-electricity = int(input("Enter Number of electricity units :"))
-if electricity >=300:
-    extra_surcharge = 500
-    print(f"Your electricity bill is {electricity*8 + extra_surcharge}")
-elif electricity >= 200:
-    surcharge = 100
-    print(f"Your electricity bill is {electricity*8 + surcharge}")
-elif electricity >= 100:
-    gst = (electricity*8 + surcharge) * 0.18
-    print(f"Your electricity bill with GST is {electricity*8 + surcharge + gst}")
-else:
-    print(f"Your electricity bill is {electricity*8}")
+units = float(input("Enter Number of electricity units :"))
+price_per_unit = 8.0
+total_cost = units * price_per_unit
+total_bill = 0
 
+if units >=300:
+    total_bill = total_cost+500
+else:
+    total_bill = total_cost+100
+print(f"Your electricity bill is {total_bill}")
+gst_amount = total_bill * 0.18
+final_bill = total_bill + gst_amount
+print(f"Your electricity bill with GST is {final_bill}")
