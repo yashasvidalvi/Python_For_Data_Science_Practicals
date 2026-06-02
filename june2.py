@@ -34,9 +34,9 @@
 # print(b)
 # print(c)
 
-#swapping
-num1=10
-num2=20
+# #swapping
+# num1=10
+# num2=20
 
 # num3 =num1
 # num1 = num2
@@ -45,6 +45,13 @@ num2=20
 # print(num1)
 # print(num2)
 
-num1, num2 = num2, num1
-print(num1)
-print(num2)
+# num1, num2 = num2, num1
+# print(num1)
+# print(num2)
+
+# t = (10,'sai',20.5,10+20j, True, "Sai")
+# # for ele in t:
+# #     print(ele)
+
+# for i in range(len(t)):
+#     print(t[i])
