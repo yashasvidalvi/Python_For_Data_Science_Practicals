@@ -31,7 +31,9 @@
 #     print("Set is Mutable.....")
 
 # s1 = {1,2,3}
-# s2 = {3,4,5}
+s2 = {1,2,3,4,5}
+s2.pop(5)
+print(s2)
 # print(s1 |s2)
 # print(s1 & s2)
 # s3 = s1.intersection(s2)
@@ -39,14 +41,14 @@
 # s4 = s1.union(s2)
 # print(s4)
 
-# find common subjects between two students with lower case and upper case letters
+# # find common subjects between two students with lower case and upper case letters
 
-student1 = ['Python', 'Java', 'SQL', 'HTML']
-student2 = ['PHP', 'Python', 'React', 'JAVA']
-# common_subjects = {s for s in student1 if s.lower() in {t.lower() for t in student2}}
-# print(common_subjects)
+# student1 = ['Python', 'Java', 'SQL', 'HTML']
+# student2 = ['PHP', 'Python', 'React', 'JAVA']
+# # common_subjects = {s for s in student1 if s.lower() in {t.lower() for t in student2}}
+# # print(common_subjects)
 
-for i in student1:
-    for j in student2:
-        if i.lower() == j.lower():
-            print(i)
+# for i in student1:
+#     for j in student2:
+#         if i.lower() == j.lower():
+#             print(i)
