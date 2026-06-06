@@ -1,5 +1,3 @@
-#create a dictionary to store 5 movie name and its cast
-
 movies_db = {
     "Dhurandhar": ["Ranveer Singh", "Akshay Khanna", "Sanjay Dutt", "Sara Arjun"],
     "Jawan": ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi"],
@@ -8,4 +6,15 @@ movies_db = {
     "KGF": ["Yash", "Shrinidhi Shetty", "Sanjay Dutt"]
 }
 
-print("Movies Database:", movies_db)
+frequency = {}
+for movie, cast in movies_db.items():
+    for actor in cast:
+        if actor in frequency:
+            frequency[actor] += 1
+        else:
+            frequency[actor] = 1
+
+print("Actor Frequency:")
+for actor, count in frequency.items():
+    print(f"{actor}: {count}")
+    
