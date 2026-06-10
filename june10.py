@@ -37,3 +37,11 @@ def delete_duplicates_email(email_list):
         print(f"{email} need to delete {count} times")
 
 delete_duplicates_email(l)
+
+#global scope
+x = 10
+def f1():
+    #local scope
+    x =20
+    print(x)
+    print(x)
