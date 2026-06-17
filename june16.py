@@ -1,4 +1,5 @@
 #Higher order function
+
 # def addTwo(a,b):
 #     return a+b
 # def MyHof(f1,p,q):
@@ -33,8 +34,8 @@ marks = [67,98,88,76,34,91,79]
 # topperlist = list(filter(greaterThan90,marks))
 # print(topperlist)
 
-def addTwo(a,b):
-    return a+b
-from functools import reduce 
-s = reduce(addTwo,marks)
-print(s)
+# def addTwo(a,b):
+#     return a+b
+# from functools import reduce 
+# s = reduce(addTwo,marks)
+# print(s)
