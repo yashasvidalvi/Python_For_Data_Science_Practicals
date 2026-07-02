@@ -1,8 +1,0 @@
-fn = input("Enter First Name: ")
-mn = input("Enter Middle Name: ")
-ln = input("Enter Last Name: ")
-per = input("Enter Percentage: ")
-
-print("-----Student Details-----")
-s = f"Student First Name is {fn}, Middle name is {mn}, Last name is {ln}, Percentage is {per}%"
-print(s)
