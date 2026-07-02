@@ -1,7 +1,0 @@
-Jay = int(input("Enter Jay age: "))
-Viru = int(input("Enter Viru age: "))
-
-if Jay >Viru :
-    print("Jay will pay the bill")
-else:
-    print("Viru will pay the bill")
